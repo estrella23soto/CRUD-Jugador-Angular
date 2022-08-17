@@ -1,0 +1,85 @@
+
+    <div class="contanier mt-5">
+
+        <div class="row">
+            <div class="col-lg">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="card">
+                    <div class="card-body ">
+                        <span class="titulo "> MODIFICAR JUGADORES</span>
+    <div class="row">
+    <DIV class="col-sm-6">
+        <form >
+            
+
+             <div class="mb3">
+                <label class="form-label">Nombre del Jugador</label>
+                <input [(ngModel)]="jugador.nombre" type="text" class="form-control" name="nombre" placeholder="Nombre del Jugador">
+            
+             </div>
+             <div class="mb3">
+                <label class="form-label">Nombre del equipo</label>
+                <input [(ngModel)]="jugador.equipo" type="text" class="form-control" name="equipo" placeholder="Nombre del Equipo">
+    
+             </div>
+             <div class="mb3">
+                <label class="form-label">Posicion</label>
+                <input [(ngModel)]="jugador.posicion" type="text" class="form-control" name="posicion" placeholder="Nombre de la Posicion">
+                </div>
+             <div class="mb3">
+                <label class="form-label">Numero de Goles</label>
+            <input [(ngModel)]="jugador.goles" type="number" class="form-control" name="goles" placeholder="Numero de Goles">
+             </div>
+             <div class="mb3">
+                <label class="form-label">Numero de Campeonatos</label>
+                <input [(ngModel)]="jugador.campeonatos" type="number" class="form-control" name="campeonatos" placeholder="Numero de Campeonatos">
+             </div>
+           <button (click)="modificar()" class="btn btn-primary">Guardar</button>
+            </form>
+    </DIV>
+    <DIV class="col-sm-6">
+        <div class="container">
+            <form >
+                
+                <div class="mb3">
+                   <label class="form-label">{{jugador.nombre}}</label>
+                  
+               
+                </div>
+                <div class="mb3">
+                   <label class="form-label">{{jugador.equipo}}</label>
+                   
+                </div>
+                <div class="mb3">
+                   <label class="form-label">{{jugador.posicion}}</label>
+                   
+                   </div>
+                <div class="mb3">
+                   <label class="form-label">{{jugador.goles}}</label>
+               
+                </div>
+                <div class="mb3">
+                   <label class="form-label">{{jugador.campeonatos}}</label>
+                   </div>
+              
+               </form>
+        </div>
+        
+    </DIV>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+
+
+
+
+
+
+            
+

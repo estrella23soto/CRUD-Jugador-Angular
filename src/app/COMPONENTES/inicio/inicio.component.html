@@ -1,0 +1,60 @@
+
+<div class="contanier mt-5">
+
+    <div class="row">
+        <div class="col-lg">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="card">
+                <div class="card-body text-center">
+                    <span class="titulo"> LISTADO DE JUGADORES</span>
+
+    
+    <button routerLink="/agregar" class="btn" style="float: right ;">
+        <span class="greet">Agregar</span>
+        <i class=" fa fa-heart"><i class="bi bi-plus-circle-fill"></i></i>
+    </button>
+    
+    <!--<p>Lista de equipos </p>-->
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Equipo</th>
+            <th scope="col">Posición</th>
+            <th scope="col">Goles</th>
+            <th scope="col">Campeonatos</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let jugador of ListarJugador">
+            <th scope="row">{{jugador._id}}</th>
+            <td>{{jugador.nombre}}</td>
+            <td>{{jugador.equipo}}</td>
+            <td>{{jugador.posicion}}</td>
+            <td>{{jugador.goles}}</td>
+            <td>{{jugador.campeonatos}}</td>
+            <td>
+                <button (click)="modificar(jugador._id)" type="button" class="btn btn-primary">
+                  <span class="greet">Editar</span>
+                  <i class="bi bi-pencil-fill"></i></button>
+            </td>
+            <td>
+          
+           <button (click)="Eliminar(jugador._id)" type="button" class="btn btn-danger" >
+            <span class="greet">Eliminar </span>
+            <i class="bi bi-trash"></i></button>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
